@@ -1,0 +1,123 @@
+/* Write your CSS here */
+
+.latest-matches-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.latest-matches-header {
+  color: #ffffff;
+  font-family: 'bree serif';
+  font-size: 20px;
+  text-align: left;
+}
+
+.latest-match-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #0f172a;
+  border-radius: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.competing-team-logo-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.competing-team {
+  color: #ffffff;
+  font-family: 'bree serif';
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.date {
+  color: #ffffff;
+  font-family: 'bree serif';
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.venue {
+  color: #ffffff;
+  font-family: 'bree serif';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.result {
+  color: #ffffff;
+  font-family: 'bree serif';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.team-logo {
+  height: 70px;
+  width: 70px;
+  margin-left: 50px;
+}
+
+.line {
+  border: 1px solid #ffffff;
+  width: 100%;
+}
+
+.innings-umpires-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.heading {
+  color: #ffffff;
+  font-family: 'bree serif';
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 0;
+}
+
+.paragraph {
+  color: #ffffff;
+  font-family: 'bree serif';
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .latest-match-card {
+    flex-direction: row;
+  }
+  .innings-umpires-card {
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .team-logo {
+    height: 210px;
+    width: 250px;
+    margin-left: 140px;
+    align-self: center;
+  }
+  .line {
+    display: none;
+  }
+  .heading {
+    text-align: right;
+  }
+  .paragraph {
+    text-align: right;
+  }
+  .venue {
+    margin-right: 170px;
+  }
+}
